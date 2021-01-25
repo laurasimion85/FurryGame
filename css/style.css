@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gameover {
+  from {font-size:30px;}
+  to {font-size:90px;}
+}
+@keyframes blink { 
+  50% { border-color:black; }  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#start {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 45px;
+  background-color: black;
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
+  line-height: 120px;
+  color: beige
+}
+#logo {
+  height: 156px;
+  width: 156px;
+  margin: 0 auto;
+  background-image: url(../images/monster.png);
+  background-size: contain;
+  position: relative;
+  top: 35px;
+}
+ #game {
+  width: fit-content;
+  display: inline-block;
+  padding: 17px;
+  border-color: darkmagenta;
+  border-radius: 73px;
+  border-style: dotted;
+  border-width: 5px;
+  color:black;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+section#score {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  width: 640px;
+  height: 640px;
+  margin: 1em auto;
+  background-color: white
+}
+
+#board  > div {    
+  border: 1px solid  rgba(167, 17, 122, 0.932);
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+
+section#score div {
+  width: 10em;
+  height: 2em;
+  text-align: center;
+  font-size: 1.5;
+  padding: 0.5em;
+  background-color: black;
+  color:beige;
+  box-shadow: 1px 1px 5px 1px lightgray;
+  margin: 1em auto;
+}
+
+
+
+
+.furry {
+  width: 64px;
+  height: 64px;
+  background-image: url('../images/monster.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.coin {
+  width: 55px;
+  height: 55px;
+  background-image: url('../images/coin1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#over {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  background-color: rgba(14, 13, 13, 0.822);
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
+  line-height: 200px;
+  color:cornsilk;
+  
+  
+}
+#gameover {
+  color: cornsilk;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  animation-name: gameover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+section#over pre {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bolder;
+  color: brown;
+}
+
+section#over span {
+  font-weight: bolder;
+  font-size: 0.6em;
+  
+}
+
+.invisible {
+  display: none;
+}
+
+#start button{
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+button:hover{
+color:darkmagenta;
+}
+
+button#replay {
+  font-size: 0.5em;
+  font-weight: bold;
+}

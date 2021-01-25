@@ -1,0 +1,26 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurasimion85/BUC_FER_S_06_Furry_Game_EN.git"
+  },
+  "author": "Laura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurasimion85/BUC_FER_S_06_Furry_Game_EN/issues"
+  },
+  "homepage": "https://github.com/laurasimion85/BUC_FER_S_06_Furry_Game_EN#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "description": "Live demo: https://laurasimion85.github.io/Furry-Game/",
+  "keywords": [
+    "y"
+  ]
+}
